@@ -1,0 +1,168 @@
+/* Main container */
+.recommendation-container {
+    font-family: 'Roboto', sans-serif;
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+/* Header */
+.recommendation-container h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Added shadow for a bold effect */
+}
+
+/* Input section */
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.input-container input {
+    padding: 12px 20px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    background-color: #faf7f0; /* Soft background color */
+}
+
+.input-container input:focus {
+    border-color: #FCC41D;
+    outline: none;
+    box-shadow: 0 0 10px rgba(252, 196, 29, 0.5); /* Added shadow for focus effect */
+}
+
+.input-container button {
+    padding: 12px 20px;
+    background-color: #FCC41D; /* Vibrant yellow */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-container button:hover {
+    background-color: #f5b000; /* Slightly darker yellow */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhance shadow effect on hover */
+}
+
+.input-container button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Error message */
+.error-message {
+    color: #e53935; /* Red for errors */
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Slight shadow for emphasis */
+}
+
+/* Results */
+.results-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.results-container li {
+    background-color: #F7F3E7; /* Very light yellow */
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    color: #333; /* Dark text for better contrast */
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.results-container li:hover {
+    background-color: #f3e4a3; /* Light golden-yellow hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .recommendation-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .input-container input {
+        width: 60%;
+    }
+
+    .input-container button {
+        width: 30%;
+    }
+}
+
+/* Clear button */
+.clear-button {
+    padding: 12px 20px;
+    background-color: #f1f1f1; /* Light grey background */
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.clear-button:hover {
+    background-color: #e0e0e0; /* Darker grey on hover */
+    transform: translateY(-2px);
+}
+
+.clear-button:active {
+    transform: translateY(0);
+}
+
+/* Dropdown */
+.select-container {
+    margin: 20px 0;
+}
+
+.select-container select {
+    padding: 12px;
+    font-size: 16px;
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.select-container select:hover {
+    background-color: #faf7f0;
+}
+
+.select-container label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
