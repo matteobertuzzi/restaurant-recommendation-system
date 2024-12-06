@@ -1,8 +1,8 @@
 # Restaurant Recommendation System
 
-The **Restaurant Recommendation System** is an interactive and dynamic web application designed to help users discover new dining spots based on their preferences. It offers a simple and intuitive interface where users can either type the name of a restaurant they enjoy or select one from a predefined list. The app seamlessly integrates with a backend API built with Flask, which processes the input and provides personalized restaurant recommendations.
+The Restaurant Recommendation System is a web app that helps users find new restaurants based on their preferences. Users can either type the name of a restaurant they like or choose from a list of popular options. The app works with a backend API built using Flask, which processes the input and gives personalized restaurant suggestions.
 
-This project combines the power of React on the frontend with Flask on the backend to deliver a modern and efficient recommendation engine. It’s perfect for food enthusiasts who are looking for new places to dine and try out, based on their restaurant preferences.
+This project uses React for the frontend and Flask for the backend to provide a smooth and efficient recommendation system. It’s a great tool for food lovers who want to discover new dining spots based on their restaurant preferences.
 
 ## Features
 
@@ -39,12 +39,13 @@ This project uses modern technologies and development practices to ensure scalab
   - **React Hooks (useState)**: The app uses React hooks to manage state for the restaurant input, recommendations, and error messages. This ensures a clean and efficient way to handle data in functional components.
 
 - **Other Libraries**:
-  - **axios** (for making HTTP requests)
   - **react-responsive** (for responsive design handling)
+ 
+## Data Source
 
-## Getting Started
+The restaurant data used in this project is sourced from a Kaggle dataset titled [Restaurant Reviews](https://www.kaggle.com/datasets/joebeachcapital/restaurant-reviews/data). This dataset provides various restaurant reviews and ratings, which are used to generate personalized restaurant recommendations.
 
-Follow these steps to get the project up and running locally on your machine:
+You can access the full dataset on Kaggle [here](https://www.kaggle.com/datasets/joebeachcapital/restaurant-reviews/data).
 
 ### Prerequisites
 
@@ -62,4 +63,3 @@ Start by cloning this repository to your local machine:
 
 ```bash
 git clone https://github.com/matteobertuzzi/restaurant-recommendation-system.git
-cd restaurant-recommendation-system
